@@ -30,7 +30,7 @@ public class ArmstrongNum {
     }
 
     public static void main(String[] args) {
-        int n = 153;
+        int n = 1532;
         armstrongNumber(n);
 
     }

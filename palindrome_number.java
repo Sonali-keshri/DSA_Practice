@@ -21,7 +21,7 @@ public class palindrome_number {
     }
 
     public static void main(String[] args) {
-        int n = 12321;
+        int n = 123213;
         System.out.println(palindromeNumber(n));
 
     }

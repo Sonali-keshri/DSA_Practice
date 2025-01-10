@@ -110,7 +110,7 @@ public class patterns {
 
     public static void main(String args[]) {
         int num = 5;
-        // pattern1(num);
+        pattern1(num);
         pattern9(num);
 
     }

@@ -11,7 +11,7 @@ public class reversedigits {
         return rev;
     }
     public static void main(String[] args) {
-        int n = 12345;
+        int n = 1345;
         System.out.println(reverseDigits(n));
 
       

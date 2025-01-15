@@ -11,6 +11,7 @@ public class SelectionSort {
 
     public static int[] selectionSortAlgo(int[] array) {
         int n = array.length;
+      
         for (int i = 0; i <= n - 2; i++) {
             int min = i;
             for (int j = i; j <= n - 1; j++) {
@@ -26,7 +27,7 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         // int[] arr = { 30, 3, 4, 12, 18, 36 };
-        int[] arr = { 13, 32, 26, 35, 10 };
+        int[] arr = { 13, 32, 26, 35, 10 }; 
         int[] res = selectionSortAlgo(arr);
         System.out.println(Arrays.toString(res));
     }

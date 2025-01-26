@@ -1,8 +1,34 @@
 import java.util.HashMap;
 
 public class LogenstSubarraySumEqualtoK {
+    // Optimal Approach for postive + zero values 
+    // time complexity = 0(2N)
+    
+    public static void longestSubarray3(int[] arr, int n, long k) {
 
-    // Better Approach
+        int left = 0;
+        int right = 0;
+        int maxLen = 0;
+        int sum = arr[0];
+
+        while (right < n) {
+            while (left <= right && sum > k) {
+                sum -= arr[left];
+                left++;
+            }
+            if (sum == k) {
+                maxLen = Math.max(maxLen, right - left + 1);
+            }
+
+            right++;
+            if (right < n) {
+                sum += arr[right];
+            }
+        }
+        System.out.println(maxLen);
+    }
+
+    // Better Approach for postive + Negative + zero values
     public static void longestSubarray2(int[] arr, int n, long k) {
         int len = 0;
         HashMap<Long, Integer> newmap = new HashMap<>();
@@ -29,7 +55,7 @@ public class LogenstSubarraySumEqualtoK {
 
         }
 
-        System.out.println("length : " +  len);
+        System.out.println("length : " + len);
     }
 
     // Brute force Approach
@@ -49,11 +75,10 @@ public class LogenstSubarraySumEqualtoK {
     }
 
     public static void main(String[] args) {
-        // int arr[] = { 1, 2, 3, 1, 1, 1, 1, 4, 2, 3 };
-        int arr[] ={2,3,5};
+        int arr[] = { 1, 2, 3, 1, 1, 1, 1, 4, 2, 3 };
+        // int arr[] ={2,3,5};
         int n = arr.length;
-        long k = 5;
-        longestSubarray2(arr, n, k);
+        long k = 6;
+        longestSubarray3(arr, n, k);
     }
 }
-

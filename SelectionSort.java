@@ -1,3 +1,12 @@
+// Find the minimum from the array and swap it with the first element of the array in loop.
+// eg : [5, 2, 8, 12, 3]
+// After first iteration : [2, 5, 8, 12, 3]
+// After second iteration : [2, 3, 8, 12, 5]
+// After third iteration : [2, 3, 5, 12, 8]
+// After fourth iteration : [2, 3, 5, 8, 12]
+// After fifth iteration : [2, 3, 5, 8, 12]
+// Time complexity : O(n^2)
+
 import java.util.Arrays;
 
 public class SelectionSort {

@@ -1,3 +1,7 @@
+// Bubble Sort works by repeatedly stepping through the list, comparing adjacent elements, and swapping them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The name "Bubble Sort" comes from the way smaller elements bubble to the top of the list during each pass.
+
+// In BubbleSort find the max and swap it with adjacent item. 
+
 import java.util.Arrays;
 
 public class BubbleSort {

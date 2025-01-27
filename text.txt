@@ -1,0 +1,12 @@
+Portfolio -
+
+https://www.youtube.com/watch?v=ilw_g_rxtVc&t=999s
+
+https://www.behance.net/gallery/187470735/Portfolio-website-for-full-stack-developer?tracking_source=search_projects|developer+portfolio&l=34
+
+https://www.behance.net/gallery/184177031/Developer-portfolio-website-design?tracking_source=search_projects|developer+portfolio&l=54
+
+All types of carousal
+https://devsnap.me/react-carousels
+https://forfrontend.com/css-vertical-sliders/
+https://codepen.io/andyNroses/pen/KaENLb
